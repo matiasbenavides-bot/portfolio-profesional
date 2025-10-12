@@ -4,9 +4,77 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* --- Responsive General --- */
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+ul.nav-links {
+  border: 2px solid rgb(255, 187, 0);
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  width: max-content;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 5px 10px;
+  transition: color 0.3s;
+}
+
+li a:hover {
+  color: rgb(125, 0, 0);
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+/* --- Resto de tus estilos existentes (hero, sobre-card, habilidades, proyectos, estudios, contacto, footer) --- */
+/* ... aquí va todo tu CSS previo ... */
+
+/* --- Responsive / Menú hamburguesa --- */
 @media (max-width: 768px) {
-  /* Menú hamburguesa visible */
   .hamburger {
     display: flex;
     position: absolute;
@@ -15,7 +83,6 @@
     z-index: 1100;
   }
 
-  /* Ocultar links del menú hasta que se abra */
   .nav-links {
     position: fixed;
     top: 0;
@@ -34,17 +101,12 @@
     left: 0;
   }
 
-  .nav-links li a {
-    font-size: 20px;
-  }
-
-  /* Centrar el header cuando hamburguesa está activo */
   header {
     justify-content: flex-start;
     padding: 20px;
   }
 
-  /* Card “Habilidades” y demás secciones */
+  /* Card Habilidades y otras secciones */
   .habilidades,
   .sobre-card,
   .proyectos,
@@ -55,7 +117,6 @@
     margin: 30px auto;
   }
 
-  /* Botones dentro de habilidades */
   .btns {
     flex-wrap: wrap;
     justify-content: center;
@@ -72,7 +133,7 @@
   }
 }
 
-/* Para pantallas muy pequeñas (celulares pequeños) */
+/* Para pantallas muy pequeñas */
 @media (max-width: 480px) {
   .hero-content h1 {
     font-size: 2rem;
@@ -87,6 +148,7 @@
     padding: 8px 15px;
   }
 }
+
 body {
   background-color: black;
   font-family: Arial, sans-serif;
@@ -440,4 +502,5 @@ div .card{
   margin-top: 10px;
   font-size: 0.9rem;
 }
+
 
