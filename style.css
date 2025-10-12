@@ -67,49 +67,26 @@ li a:hover {
 }
 
 @media (max-width: 768px) {
-  .nav-links {
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background-color: #222;
-    flex-direction: column;
-    width: 100%;
-    display: none;
-    text-align: center;
+  .inicio{
+    width:100%
   }
-
-  .nav-links.active {
-    display: flex;
+  .sobremi{
+    width:100%
   }
-
-  .hamburger {
-    display: flex;
+  .habilidades{
+    width:100%
   }
-}
-/* --- TABLETS --- */
+  .proyectos{
+    width:100%
+  }
+  .estudios{
+    width:100%
+  }
+  .contacto{
+    width:100%
+  }
 @media (max-width: 1024px) {
-  ul {
-    gap: 15px;
-    padding: 10px;
-  }
-
-  li a {
-    font-size: 18px;
-  }
-
-  .hero-content h1 {
-    font-size: 2.3rem;
-  }
-
-  .hero-content p {
-    font-size: 1rem;
-  }
-
-  .card-container {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-
+  
   .sobre-card {
     width: 90%;
     padding: 20px;
@@ -526,3 +503,4 @@ div .card{
   margin-top: 10px;
   font-size: 0.9rem;
 }
+
