@@ -17,54 +17,46 @@ document.addEventListener('DOMContentLoaded', () => {
     hamburger.setAttribute('aria-expanded', 'false');
   };
 
-  // Toggle al hacer click en el botón
-  hamburger.addEventListener('click', (e) => {
+  hamburger.addEventListener('click', () => {
     const isOpen = hamburger.classList.contains('active');
     if (isOpen) closeMenu();
     else openMenu();
   });
 
-  // Cerrar cuando se clickea un enlace del menú (útil en móvil)
   navLinksItems.forEach(link => {
     link.addEventListener('click', () => {
-      // pequeña espera para que el scroll ocurra antes de cerrar visualmente (opcional)
       closeMenu();
     });
   });
 
-  // Cerrar si se hace click fuera del menú cuando está abierto
   document.addEventListener('click', (e) => {
     if (!navLinks.classList.contains('active')) return;
     const target = e.target;
     if (target === hamburger || hamburger.contains(target)) return;
     if (target === navLinks || navLinks.contains(target)) return;
-    // click fuera
     closeMenu();
   });
 
-  // Cerrar con tecla Escape
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && navLinks.classList.contains('active')) {
       closeMenu();
     }
   });
 });
-// Seleccionamos el formulario y el mensaje
+
+// Formulario
 const form = document.getElementById('contactForm');
 const formMessage = document.getElementById('formMessage');
 
 form.addEventListener('submit', async function(e) {
-  e.preventDefault(); // Evita que la página se recargue
-
+  e.preventDefault();
   const formData = new FormData(form);
 
   try {
     const response = await fetch(form.action, {
       method: form.method,
       body: formData,
-      headers: {
-        'Accept': 'application/json'
-      }
+      headers: {'Accept': 'application/json'}
     });
 
     if (response.ok) {
