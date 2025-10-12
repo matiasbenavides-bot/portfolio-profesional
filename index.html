@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Matías Benavides</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a2d04e3e52.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+  <div class="nav-container">
+    <ul class="nav-links">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#sobremi">Sobre mí</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#estudios">Estudios</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <div class="hamburger" aria-label="Abrir menú" aria-expanded="false">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+</header>
+
+<section id="inicio" class="hero">
+  <div class="hero-content">
+    <h1>Hola, soy Matías Benavides</h1>
+    <p>Desarrollador Front-End especializado en crear experiencias web elegantes y modernas con HTML, CSS y JavaScript.</p>
+    <div class="hero-buttons">
+      <a href="#proyectos" class="btn">Ver Proyectos</a>
+      <a href="#" class="btn btn-outline">Descargar CV</a>
+    </div>
+    <div class="social">
+      <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:correo@ejemplo.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+</section>
+
+<section id="sobremi" class="sobre-card">
+  <h2>Sobre mí</h2>
+  <p> 1 septiembre 2025 estudios autodidacta</p>
+  <p>desarrollador <strong>Front-End</strong> apasionado por crear páginas web </p>
+  <p><strong>Ubicación:</strong> Chile | <strong>Edad:</strong> 15 años | <strong>Disponibilidad:</strong> Trabajo remoto</p>
+  <p>Mi mayor habilidad es la <strong>capacidad de aprendizaje y versatilidad</strong>, lo que me permite adaptarme rápidamente y mejorar continuamente.</p>
+</section>
+
+<section id="habilidades" class="habilidades">
+  <h2>Habilidades</h2>
+  <div class="btns">
+  <button class="css">Css</button>
+  <button class="Html">Html</button>
+  <button class="JavaScript">JavaScript</button>
+  </div>
+</section>
+
+<section id="proyectos" class="proyectos">
+  <h2>Proyectos</h2>
+ <div class="card-container">
+  <div class="card">
+<h3>muebleria betsi</h3>
+<p>Sitio web responsive para mueblería con diseño moderno y catálogo de productos.</p>
+ <a href="https://tu-pagina-heavyhome.com" target="_blank">Ver Página</a>
+    <a href="https://github.com/tuusuario/heavyhome" target="_blank">Código</a>
+  </div>
+  <div class="card">
+<h3>Heavy Fit</h3>
+   <p>App web para registrar y seguir entrenamientos con series, repeticiones e intensidad.</p>
+    <a href="https://tu-pagina-heavyhome.com" target="_blank">Ver Página</a>
+    <a href="https://github.com/tuusuario/heavyhome" target="_blank">Código</a>
+  </div>
+  <div class="card">
+<h3>Kroma Gems</h3>
+ <p>Catálogo interactivo con filtros, búsqueda y carrito de compras funcional.</p>
+  <a href="https://tu-pagina-heavyhome.com" target="_blank">Ver Página</a>
+    <a href="https://github.com/tuusuario/heavyhome" target="_blank">Código</a>
+  </div>
+ </div>
+</section>
+
+<section id="estudios" class="estudios">
+  <h2>Estudios y Formación</h2>
+
+    <div class="front-end">
+      <h3>Certificado Profesional de Front-End Developer</h3>
+      <p>Coursera – Universidad de Meta. HTML, CSS, JavaScript, React y responsive design.</p>
+      <a href="https://coursera.org/...tu-certificado..." target="_blank">Ver certificado de Front-End</a>
+    </div>
+
+    <div class="front-end">
+      <h3>Certificado Profesional de Back-End Developer</h3>
+      <p>Coursera – Universidad de Meta Node.js, Express, bases de datos y APIs.</p>
+      <a href="https://coursera.org/...tu-certificado..." target="_blank">Ver certificado de Front-End</a>
+    </div>
+
+    <div class="analitica">
+      <h3>Certificado Profesional de Analítica de Datos</h3>
+      <p>Coursera – Google Análisis de datos, SQL, hojas de cálculo y visualización.</p>
+       <a href="https://coursera.org/...tu-certificado..." target="_blank">Ver certificado de Front-End</a>
+    </div>
+
+</section>
+
+
+<section id="contacto" class="contacto">
+  <!-- FORMULARIO FORMSPREE -->
+    <h2>Contacto</h2>
+    <form
+      class="contact-form"
+      id="contactForm"
+      action="https://formspree.io/f/xdkwpowq"
+      method="POST"
+    >
+      <label for="nombre">Nombre</label>
+      <input
+        type="text"
+        id="nombre"
+        name="name"
+        placeholder="Tu nombre"
+        required
+      />
+
+      <label for="email">Correo</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Tu correo"
+        required
+      />
+
+      <label for="mensaje">Mensaje</label>
+      <textarea
+        id="mensaje"
+        name="message"
+        rows="5"
+        placeholder="Escribe tu mensaje"
+        required
+      ></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+    <p id="formMessage" class="form-message"></p>
+  </section>
+
+<footer>
+<footer class="footer">
+  <p>© 2025 Matías Benavides | Desarrollador Web Front-End</p>
+  
+  <div class="footer-links">
+    <a href="https://github.com/matiasbenavides-bot"  target="_blank">GitHub</a>
+    <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+    <a href="mailto:tucorreo@gmail.com">Email</a>
+  </div>
+
+  <p class="frase">“Transformo ideas en experiencias digitales.”</p>
+</footer>
+
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
