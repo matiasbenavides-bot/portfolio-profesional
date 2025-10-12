@@ -1,152 +1,14 @@
+@media (max-width: 768px){
+.hamburger{
+display: flex;
+}
+}
+
 /* Reset básico */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: black;
-  font-family: Arial, sans-serif;
-  overflow-x: hidden;
-}
-
-/* Header */
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 0;
-}
-
-ul.nav-links {
-  border: 2px solid rgb(255, 187, 0);
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  justify-content: center;
-  background-color: rgb(0, 0, 0);
-  width: max-content;
-  margin: 0 auto;
-  padding: 10px 20px;
-  border-radius: 10px;
-}
-
-li a {
-  color: white;
-  text-decoration: none;
-  font-size: 25px;
-  padding: 5px 10px;
-  transition: color 0.3s;
-}
-
-li a:hover {
-  color: rgb(125, 0, 0);
-}
-
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
-
-.hamburger div {
-  width: 25px;
-  height: 3px;
-  background-color: white;
-  margin: 4px 0;
-  transition: 0.4s;
-}
-
-/* --- Resto de tus estilos existentes (hero, sobre-card, habilidades, proyectos, estudios, contacto, footer) --- */
-/* ... aquí va todo tu CSS previo ... */
-
-/* --- Responsive / Menú hamburguesa --- */
-@media (max-width: 768px) {
-  .hamburger {
-    display: flex;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    z-index: 1100;
-  }
-
-  .nav-links {
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 60%;
-    height: 100%;
-    flex-direction: column;
-    background-color: #000;
-    border-right: 2px solid rgb(255, 187, 0);
-    padding-top: 100px;
-    gap: 30px;
-    transition: 0.3s;
-  }
-
-  .nav-links.active {
-    left: 0;
-  }
-
-  header {
-    justify-content: flex-start;
-    padding: 20px;
-  }
-
-  /* Card Habilidades y otras secciones */
-  .habilidades,
-  .sobre-card,
-  .proyectos,
-  .estudios,
-  .contacto {
-    width: 90%;
-    padding: 20px;
-    margin: 30px auto;
-  }
-
-  .btns {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .css, .Html, .JavaScript {
-    font-size: 20px;
-    padding: 8px 12px;
-  }
-
-  .card-container {
-    flex-direction: column;
-    gap: 20px;
-  }
-}
-
-/* Para pantallas muy pequeñas */
-@media (max-width: 480px) {
-  .hero-content h1 {
-    font-size: 2rem;
-  }
-
-  .hero-content p {
-    font-size: 0.9rem;
-  }
-
-  .btn, .btn-outline {
-    font-size: 0.9rem;
-    padding: 8px 15px;
-  }
 }
 
 body {
@@ -311,7 +173,7 @@ li a:hover {
   justify-content: center;
   border: 1px solid  #D4AF37;
   border-radius: 15px;
-  width: 500px;
+  width: 90%;
   margin: 50px auto;
 }
 .btns{
@@ -502,5 +364,3 @@ div .card{
   margin-top: 10px;
   font-size: 0.9rem;
 }
-
-
