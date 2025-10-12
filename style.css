@@ -4,7 +4,89 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* --- Responsive General --- */
+@media (max-width: 768px) {
+  /* Menú hamburguesa visible */
+  .hamburger {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1100;
+  }
 
+  /* Ocultar links del menú hasta que se abra */
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 60%;
+    height: 100%;
+    flex-direction: column;
+    background-color: #000;
+    border-right: 2px solid rgb(255, 187, 0);
+    padding-top: 100px;
+    gap: 30px;
+    transition: 0.3s;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .nav-links li a {
+    font-size: 20px;
+  }
+
+  /* Centrar el header cuando hamburguesa está activo */
+  header {
+    justify-content: flex-start;
+    padding: 20px;
+  }
+
+  /* Card “Habilidades” y demás secciones */
+  .habilidades,
+  .sobre-card,
+  .proyectos,
+  .estudios,
+  .contacto {
+    width: 90%;
+    padding: 20px;
+    margin: 30px auto;
+  }
+
+  /* Botones dentro de habilidades */
+  .btns {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .css, .Html, .JavaScript {
+    font-size: 20px;
+    padding: 8px 12px;
+  }
+
+  .card-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* Para pantallas muy pequeñas (celulares pequeños) */
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+
+  .btn, .btn-outline {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+}
 body {
   background-color: black;
   font-family: Arial, sans-serif;
@@ -358,3 +440,4 @@ div .card{
   margin-top: 10px;
   font-size: 0.9rem;
 }
+
