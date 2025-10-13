@@ -1,35 +1,4 @@
-/* --- Responsive: menú hamburguesa --- */
-@media (max-width: 768px) {
-  .nav-links {
-    position: absolute;
-    top: 70px; /* Ajusta según altura del header */
-    right: 0;
-    width: 200px; /* Ancho del menú */
-    flex-direction: column;
-    gap: 0;
-    background-color: #000;
-    padding: 20px;
-    border-radius: 10px;
-    display: none; /* Oculto por defecto */
-  }
 
-  .nav-links.active {
-    display: flex; /* Se muestra al abrir */
-  }
-
-  .hamburger {
-    display: flex; /* Solo visible en móvil */
-  }
-
-  /* Ajuste de los links dentro del menú */
-  .nav-links li {
-    margin: 10px 0;
-  }
-
-  .nav-links li a {
-    font-size: 20px;
-  }
-}
 /* Reset básico */
 * {
   margin: 0;
@@ -44,15 +13,20 @@ body {
 
 }
 
-
-  /* --- Header --- */
+/* --- Header --- */
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   display: flex;
-  justify-content: space-between; /* antes estaba center */
+  justify-content: space-between; /* cambio aquí */
   align-items: center;
   padding: 20px;
   background-color: #000;
 }
+
 .nav-container {
   width: 90%;
   max-width: 1200px;
@@ -61,20 +35,17 @@ header {
   align-items: center;
 }
 
+/* --- Menú links --- */
 .nav-links {
   list-style: none;
   display: flex;
   gap: 20px;
-  background-color: #000;
-  padding: 10px 20px;
-  border-radius: 10px;
-  transition: all 0.3s ease;
 }
 
 .nav-links li a {
   color: white;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 18px;
   padding: 5px 10px;
   transition: color 0.3s;
 }
@@ -83,8 +54,9 @@ header {
   color: rgb(125, 0, 0);
 }
 
+/* --- Hamburguesa --- */
 .hamburger {
-  display: none;
+  display: none; /* solo visible en móvil */
   flex-direction: column;
   cursor: pointer;
 }
@@ -95,6 +67,36 @@ header {
   background-color: white;
   margin: 4px 0;
   transition: 0.4s;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: flex; /* se muestra en móvil */
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 70px; /* debajo del header */
+    right: -250px; /* empieza fuera de la pantalla */
+    width: 200px;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    transition: right 0.3s ease;
+    height: calc(100% - 70px);
+  }
+
+  .nav-links.active {
+    right: 0; /* al abrir, entra en pantalla */
+  }
+
+  .nav-links li a {
+    font-size: 20px;
+  }
 }
 
 .hero {
@@ -388,6 +390,7 @@ div .card{
   margin-top: 10px;
   font-size: 0.9rem;
 }
+
 
 
 
