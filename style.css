@@ -16,19 +16,12 @@ body {
 
   /* --- Header --- */
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
   display: flex;
-  justify-content: center;
+  justify-content: space-between; /* antes estaba center */
   align-items: center;
-  padding: 20px 0;
+  padding: 20px;
   background-color: #000;
-  
 }
-
 .nav-container {
   width: 90%;
   max-width: 1200px;
@@ -364,5 +357,6 @@ div .card{
   margin-top: 10px;
   font-size: 0.9rem;
 }
+
 
 
