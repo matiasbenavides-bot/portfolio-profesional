@@ -267,13 +267,20 @@ div .card{
   padding: 15px;
   border: 1px solid yellow;
 }
+
 .estudios{
   color: #D4AF37;
   display: flex;
+  margin: 50px auto;
   flex-direction: column;
   justify-items: center;
   align-items: center;
   text-align: center;
+  background-color: #1A1A1A;
+  border: 1px solid #D4AF37;
+  width: 80%;
+  border-radius: 15px;
+ 
 }
 .front-end{
   padding: 25px;
@@ -390,6 +397,7 @@ div .card{
   margin-top: 10px;
   font-size: 0.9rem;
 }
+
 
 
 
