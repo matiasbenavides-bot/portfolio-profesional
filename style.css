@@ -105,6 +105,7 @@ header {
 }
 
 .hero {
+   scroll-margin-top: 80px;
    margin-top: 100px; 
   display: flex;
   justify-content: center;
@@ -170,6 +171,7 @@ header {
 
 
 .sobre-card {
+   scroll-margin-top: 80px;
   background-color: #1A1A1A;
   border-radius: 15px;
   padding: 30px 25px;
@@ -195,6 +197,7 @@ header {
   padding: 10px;
 }
 .habilidades{
+   scroll-margin-top: 80px;
   padding: 15px;
    background-color: #1A1A1A;
   display: flex;
@@ -250,6 +253,7 @@ header {
   
 }
 .proyectos{
+   scroll-margin-top: 80px;
   background-color: #1A1A1A;
    border: 1px solid  #D4AF37;
   border-radius: 15px;
@@ -274,6 +278,7 @@ div .card{
 }
 
 .estudios{
+   scroll-margin-top: 80px;
   color: #D4AF37;
   display: flex;
   margin: 50px auto;
@@ -285,7 +290,7 @@ div .card{
   border: 1px solid #D4AF37;
   width: 80%;
   border-radius: 15px;
- 
+
 }
 .front-end{
   padding: 25px;
@@ -298,7 +303,7 @@ div .card{
 }
 /* --- Sección Contacto --- */
 .contacto {
-
+ scroll-margin-top: 80px;
   padding: 50px 20px;
   text-align: center;
   color: #D4AF37;
@@ -402,6 +407,7 @@ div .card{
   margin-top: 10px;
   font-size: 0.9rem;
 }
+
 
 
 
