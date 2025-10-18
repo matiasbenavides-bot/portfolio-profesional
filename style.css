@@ -72,6 +72,11 @@ header {
 /* --- Responsive --- */
 @media (max-width: 768px) {
 
+.proyectos{
+  display: grid;
+}
+  
+  
   .hamburger {
     display: flex; /* se muestra en móvil */
   }
@@ -397,6 +402,7 @@ div .card{
   margin-top: 10px;
   font-size: 0.9rem;
 }
+
 
 
 
