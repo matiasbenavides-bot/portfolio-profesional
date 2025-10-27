@@ -234,6 +234,7 @@ header {
 .btns{
   margin-top: 1rem;
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   padding: 10px;
  
@@ -428,6 +429,7 @@ div .card{
   margin-top: 10px;
   font-size: 0.9rem;
 }
+
 
 
 
