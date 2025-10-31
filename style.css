@@ -242,10 +242,11 @@ header {
 .css, .Html, .JavaScript, .React, .git, .github, .UXUI{
   padding: 10px;
   color: #ffffff;
-   font-size: 25px;
-   background: transparent;
-   border: 1px solid yellow;
+  font-size: 25px;
+  background: transparent;
+  border: 1px solid yellow;
 }
+
 
 .css:hover, .Html:hover, .JavaScript:hover{
   transition: 0.5s;
