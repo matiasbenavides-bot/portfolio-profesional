@@ -431,6 +431,15 @@ div .card{
   font-size: 0.9rem;
 }
 
+strong{
+  color: #ffe799;
+ text-shadow: 
+        0 0 10px rgb(255, 255, 0),
+        0 0 20px rgb(225, 255, 0),
+}
+
+
+
 
 
 
