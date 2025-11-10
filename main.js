@@ -69,3 +69,34 @@ form.addEventListener('submit', async function(e) {
     formMessage.textContent = "Error de conexión. Intenta más tarde.";
   }
 });
+
+const cards = document.querySelectorAll(".card");
+const prev = document.getElementById("prev");
+const next = document.getElementById("next");
+
+let current = 0;
+
+function showCard(index) {
+  cards.forEach((card, i) => {
+    card.classList.remove("active");
+    if (i === index) card.classList.add("active");
+  });
+}
+
+// Mostrar tarjeta inicial
+showCard(current);
+
+// Botones para navegar
+next.addEventListener("click", () => {
+  current = (current + 1) % cards.length;
+  showCard(current);
+});
+
+prev.addEventListener("click", () => {
+  current = (current - 1 + cards.length) % cards.length;
+  showCard(current);
+});
+
+
+
+
